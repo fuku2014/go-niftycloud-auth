@@ -26,11 +26,11 @@ For more info about AWS authentication, see the [comprehensive docs](http://docs
 
 Go get it:
 
-	$ go get github.com/smartystreets/go-aws-auth
+	$ go get github.com/fuku2014/go-niftycloud-auth
 	
 Then import it:
 
-	import "github.com/smartystreets/go-aws-auth"
+	import "github.com/fuku2014/go-niftycloud-auth"
 
 
 ### Using your AWS Credentials
