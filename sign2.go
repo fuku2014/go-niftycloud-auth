@@ -12,7 +12,7 @@ func prepareRequestV2(request *http.Request, keys Credentials) *http.Request {
 	keyID := keys.AccessKeyID
 
 	values := url.Values{}
-	values.Set("AWSAccessKeyId", keyID)
+	values.Set("AccessKeyId", keyID)
 	values.Set("SignatureVersion", "2")
 	values.Set("SignatureMethod", "HmacSHA256")
 	values.Set("Timestamp", timestampV2())
