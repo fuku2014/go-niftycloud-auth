@@ -34,6 +34,11 @@ func serviceAndRegion(host string) (service string, region string) {
 	service = "s3"
 
 	parts := strings.Split(host, ".")
+	if parts[0] == "ess" {
+		region = "east-1"
+		service = "email"
+		return
+	}
 	if len(parts) == 4 {
 		// Either service.region.amazonaws.com or virtual-host.region.amazonaws.com
 		if parts[1] == "s3" {
